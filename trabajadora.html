@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Trabajadora</title>
+    <link rel="stylesheet" href="css/trabajadora.css">
+    <script src="js/firebaseConfig.js" type="module"></script>
+    <script src="js/trabajadora.js" type="module"></script>
+    <link rel="stylesheet" href="custom-cursor.css">
+</head>
+<body>
+    <div class="trabajadora-container">
+        <h2>Administrar Trabajadoras</h2>
+        <form id="trabajadora-form">
+            <label for="worker-name">Nombre de la Trabajadora</label>
+            <input type="text" id="worker-name" placeholder="Nombre de la trabajadora" required>
+            
+            <label for="worker-percentage">Porcentaje de Ganancia (%)</label>
+            <input type="number" id="worker-percentage" placeholder="Porcentaje de ganancia" step="0.01" required>
+            
+            <button type="submit">Guardar Trabajadora</button>
+        </form>
+        
+        <h3>Lista de Trabajadoras</h3>
+        <div id="worker-list"></div>
+        
+        <button id="back" class="back-button">Atrás</button>
+    </div>
+    <script src="custom-cursor.js" defer></script>
+</body>
+</html>
