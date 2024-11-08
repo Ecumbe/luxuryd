@@ -14,23 +14,24 @@ document.getElementById('logout').addEventListener('click', async () => {
     }
 });
 
-// Aquí puedes agregar funcionalidades para los otros botones si es necesario
+// Funcionalidades para los otros botones
 document.getElementById('facturar').addEventListener('click', () => {
-    // Redirigir a la página de facturación (deberás crear esta página)
     window.location.href = "facturar.html";
 });
 
 document.getElementById('productos').addEventListener('click', () => {
-    // Redirigir a la página de productos (deberás crear esta página)
     window.location.href = "productos.html";
 });
 
 document.getElementById('agendar-cita').addEventListener('click', () => {
-    // Redirigir a la página de agendar cita (deberás crear esta página)
     window.location.href = "agendar-cita.html";
 });
 
 document.getElementById('balance').addEventListener('click', () => {
-    // Redirigir a la página de balance (deberás crear esta página)
     window.location.href = "balance.html";
+});
+
+// Nueva funcionalidad para el botón "Trabajadora"
+document.getElementById('trabajadora').addEventListener('click', () => {
+    window.location.href = "trabajadora.html";
 });
