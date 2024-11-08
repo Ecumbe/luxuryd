@@ -12,8 +12,17 @@
         <h2>Facturación</h2>
         
         <!-- Selección de productos -->
-        <div id="product-list"></div>
-        
+        <div class="product-selection">
+            <label for="product-dropdown">Selecciona Producto:</label>
+            <select id="product-dropdown">
+                <option value="">-- Seleccione --</option>
+                <!-- Los productos se cargarán desde Firebase aquí -->
+            </select>
+        </div>
+
+        <!-- Listado de productos seleccionados -->
+        <div id="selected-products-list"></div>
+
         <!-- Detalles de facturación -->
         <div class="factura-detalles">
             <!-- Total fuera del cuadro principal -->
@@ -24,7 +33,7 @@
             <!-- Método de pago, Cuenta y Fecha en la misma línea -->
             <div class="payment-date-container">
                 <div>
-                    <label for="payment-method">Método de Pago:</label>
+                    <label for="payment-method">Pago:</label>
                     <select id="payment-method">
                         <option value="efectivo">Efectivo</option>
                         <option value="transferencia">Transferencia</option>
@@ -39,16 +48,39 @@
                     </select>
                 </div>
                 
+                <div id="bank-selection" style="display: none;">
+                    <label for="bank">Banco:</label>
+                    <select id="bank">
+                        <option value="Pichincha">Pichincha</option>
+                        <option value="Pacífico">Pacífico</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Bolivariano">Bolivariano</option>
+                        <option value="Produbanco">Produbanco</option>
+                    </select>
+                </div>
+
                 <div>
                     <label for="factura-date">Fecha:</label>
                     <input type="date" id="factura-date" required>
                 </div>
             </div>
 
+            <!-- Selección de trabajadora -->
+            <div class="trabajadora-selection">
+                <label for="trabajadora">Trabajadora:</label>
+                <select id="trabajadora">
+                    <option value="">-- Seleccione --</option>
+                    <!-- Los nombres de trabajadoras se cargarán aquí desde Firebase -->
+                </select>
+            </div>
+
             <!-- Botones -->
-            <button id="save-invoice">Guardar Factura</button>
-            <button id="back">Atrás</button>
-            <button id="logout">Cerrar Sesión</button>
+            <div class="button-group">
+                <button id="save-invoice">Guardar Factura</button>
+                <button id="review-invoices">Revisar Facturas</button>
+                <button id="back">Atrás</button>
+                <button id="logout">Cerrar Sesión</button>
+            </div>
         </div>
     </div>
 
