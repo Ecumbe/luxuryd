@@ -12,8 +12,8 @@ const firebaseConfig = {
     projectId: "luxury-8df14",
     storageBucket: "luxury-8df14.firebasestorage.app",
     messagingSenderId: "393948865590",
-    appId: "1:393948865590:web:d971545ddd58b1f115e497",
-    measurementId: "G-FNTS4JZ914"
+    appId: "1:393948865590:web:dd956e78a1f6677415e497",
+    measurementId: "G-5ZY1JZ842V"
 };
 
 // Inicializa Firebase
