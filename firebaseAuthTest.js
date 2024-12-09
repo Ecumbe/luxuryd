@@ -2,7 +2,7 @@
 const { initializeApp } = require('firebase/app');
 const { getAuth, signInWithEmailAndPassword } = require('firebase/auth');
 const readlineSync = require('readline-sync');
-
+import { getAnalytics } from "firebase/analytics";
 // Configuración de Firebase proporcionada
 const firebaseConfig = {
     apiKey: "AIzaSyD4eMcKCkE1IRsEE2F6fRs6AYs27Bdz6ZM",
@@ -17,7 +17,7 @@ const firebaseConfig = {
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
+const analytics = getAnalytics(app);
 // Solicitar el correo y la contraseña del usuario
 const email = readlineSync.question('Ingresa tu correo de usuario: ');
 const password = readlineSync.question('Ingresa tu contraseña: ', { hideEchoBack: true }); // `hideEchoBack: true` para ocultar la contraseña mientras la escribes
