@@ -2,7 +2,7 @@
 const { initializeApp } = require('firebase/app');
 const { getAuth, signInWithEmailAndPassword } = require('firebase/auth');
 const readlineSync = require('readline-sync');
-import { getAnalytics } from "firebase/analytics";
+//import { getAnalytics } from "firebase/analytics";
 // Configuración de Firebase proporcionada
 const firebaseConfig = {
     apiKey: "AIzaSyD4eMcKCkE1IRsEE2F6fRs6AYs27Bdz6ZM",
